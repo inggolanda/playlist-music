@@ -1,0 +1,16 @@
+@media only screen and (max-width: 600px){
+    
+}
+
+.nav{
+    color: inherit;
+}
+
+.nav:hover{
+    color: rgba(91, 148, 235, 0.692);
+}
+
+.container{
+    position: fixed;
+    bottom: 0;
+}
