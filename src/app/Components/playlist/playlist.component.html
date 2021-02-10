@@ -1,1 +1,22 @@
-<p>playlist works!</p>
+<div class="container mt-3 overflow-scroll" *ngFor="let play of playlist">
+        <div class="card">
+            <div class="row m-2">
+                <div class="card-body">
+                    <div class="col-6">
+                        <div class="row">
+                            <p class="card-title">{{play.artistName}}</p>
+                        </div>
+                        <div class="row">
+                            <p class="card-title">{{play.name}}</p>
+                        </div>
+                        <div class="row">
+                            <a [routerLink]="['/play',play.id]" class="btn inline"><i class="bi bi-play-fill"></i> Play</a>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <img src="" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>

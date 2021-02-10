@@ -4,10 +4,12 @@ import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './Components/home/home.component';
 import { PlayComponent } from './Components/play/play.component';
+import { PlaylistComponent } from './Components/playlist/playlist.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
-  { path: 'play', component: PlayComponent }
+  { path: 'play/:artistId', component: PlayComponent },
+  { path: 'playlist', component: PlaylistComponent}
 ];
 
 @NgModule({

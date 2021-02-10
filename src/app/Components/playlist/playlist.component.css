@@ -1,0 +1,17 @@
+.posisi{
+    position: relative;
+    margin-top: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.play{
+    font-size: 25px;
+}
+
+.btn{
+    background-color: palevioletred;
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-right: 50px;
+}

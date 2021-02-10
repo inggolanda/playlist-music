@@ -1,16 +1,29 @@
 @media only screen and (max-width: 600px){
+    .nav{
+        color: inherit;
+    }
     
+    .nav:hover{
+        color: rgba(91, 148, 235, 0.692);
+    }
+    
+    .container{
+        position: fixed;
+        bottom: 0;
+    }
+    
+    .size{
+        font-size: 25px;
+    }
+    
+    .p1{
+        margin-left: 15px;
+    }
+    .p2{
+        margin-left: 44px;
+    }
+    .p3{
+        margin-left: 34px;
+    }  
 }
 
-.nav{
-    color: inherit;
-}
-
-.nav:hover{
-    color: rgba(91, 148, 235, 0.692);
-}
-
-.container{
-    position: fixed;
-    bottom: 0;
-}
