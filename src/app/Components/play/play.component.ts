@@ -16,11 +16,18 @@ export class PlayComponent implements OnInit {
   ngOnInit(): void {
     this.route.paramMap.subscribe(Params =>{
       this.id = Params.get('id');
+      console.log(this.id)
     })
+    this.ondet();
+  }
+
+  ondet(){
     this.playlistService.onPlay(this.id).subscribe(data => {
-      //console.log(data);
-      this.music = data;
-    })    
+      this.music = data['tracks'];
+      console.log(this.music);
+    })
+  
   }
 
 }
+

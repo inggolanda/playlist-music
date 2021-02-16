@@ -2,6 +2,7 @@
         <div class="card">
             <div class="row m-2">
                 <div class="card-body">
+                <div class="row">
                     <div class="col-6">
                         <div class="row">
                             <p class="card-title">{{play.artistName}}</p>
@@ -13,9 +14,10 @@
                             <a [routerLink]="['/play',play.id]" class="btn inline"><i class="bi bi-play-fill"></i> Play</a>
                         </div>
                     </div>
-                    <div class="col-6">
-                        <img src="" alt="">
+                    <div class="col-6 p-2">
+                        <img src="http://direct.rhapsody.com/imageserver/v2/albums/{{play.albumId}}/images/150x150.jpg" alt="">
                     </div>
+                </div>
                 </div>
             </div>
         </div>

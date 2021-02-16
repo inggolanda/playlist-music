@@ -1,4 +1,19 @@
-<div class="posisi">
+<!--<div class="posisi">
     <i class="bi bi-soundwave logo"></i>
     <p>{{music.name}}</p>
+</div>-->
+<div class="container mt-5" *ngFor="let ms of music">
+    <div class="row ml-2">
+        <div class="card">
+            <img src="http://direct.rhapsody.com/imageserver/v2/albums/{{ms.albumId}}/images/200x200.jpg" alt="">
+        
+            <div class="card">
+                <div class="d-inline-flex card-header bg-green">
+                <p class="card-title ml-1 mr-2"><b>Judul</b> : {{ms.name}}</p>
+                <p class="card-title ml-1"><b>Artist</b> : {{ms.artistName}}</p>
+                </div>
+                <audio controls src="{{ms.previewURL}}"></audio>
+            </div>
+    </div>
+    </div>
 </div>
